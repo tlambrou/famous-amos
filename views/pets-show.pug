@@ -6,6 +6,7 @@ block content
             img(src=pet.picUrlSq).img-fluid
         .col-sm-8
             h1=pet.name
+            h3 $#{pet.priceInCents / 100}
             p=pet.species
             .text-right
               a.btn.btn-primary(href="/pets/" + pet.id + "/purchase" role='button') Buy #{pet.name} Now!

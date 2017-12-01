@@ -2,6 +2,8 @@ module.exports = [
     {
         id: 0,
         name: "Rex",
+        purchasedAt: null,
+        priceInCents: 20000,
         species: "Rottweiler",
         birthday: "20017-11-11",
         favoriteFood: "Chicken",
@@ -12,6 +14,8 @@ module.exports = [
     {
         id: 1,
         name: "Fido",
+        purchasedAt: null,
+        priceInCents: 20000,
         species: "Greyhound",
         birthday: "2008-11-11",
         favoriteFood: "Liver",
@@ -22,6 +26,8 @@ module.exports = [
     {
         id: 2,
         name: "Rolfe",
+        purchasedAt: null,
+        priceInCents: 20000,
         species: "Pitbull",
         birthday: "2008-11-11",
         favoriteFood: "Beef",
@@ -32,6 +38,8 @@ module.exports = [
     {
         id: 3,
         name: "Princhi",
+        purchasedAt: null,
+        priceInCents: 20000,
         species: "West Highland White Terrier",
         birthday: "2008-11-11",
         favoriteFood: "Fish",
@@ -42,6 +50,8 @@ module.exports = [
     {
         id: 4,
         name: "Mr. Fluffles",
+        purchasedAt: null,
+        priceInCents: 20000,
         species: "Poodle",
         birthday: "2008-11-11",
         favoriteFood: "Chicken",
@@ -52,6 +62,8 @@ module.exports = [
     {
         id: 5,
         name: "Santa's Little Helper",
+        purchasedAt: null,
+        priceInCents: 10000,
         species: "Mixed",
         birthday: "2008-11-11",
         favoriteFood: "Pork",
@@ -62,6 +74,8 @@ module.exports = [
     {
         id: 6,
         name: "Alf",
+        purchasedAt: null,
+        priceInCents: 9999999,
         species: "Alien",
         birthday: "2008-11-11",
         favoriteFood: "Cats",
@@ -72,6 +86,8 @@ module.exports = [
     {
         id: 7,
         name: "Bubba",
+        purchasedAt: null,
+        priceInCents: 20000,
         species: "Mastiff",
         birthday: "2008-11-11",
         favoriteFood: "Dragon",

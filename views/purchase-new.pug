@@ -1,21 +1,23 @@
 extends layout
 
 block content
-    
-    .row.justify-content-center
-        .col-sm-6
-            legend Purchase Pet #{pet.name}
-            form(action="/pets/" + pet.id + "purchase", method="POST")
-                .form-group
-                    label Full Name
-                    input.form-control(name="name" placeholder="i.e. Joe Smith") 
-                .form-group
-                    label Card Number
-                    input.form-control(name="card" placeholder="XXXXXXXXXXXXXXXX")
-                .form-group
-                    label Expiration
-                    input.form-control(name="expiration" placeholder="MM-YYYY")    
-                .form-group
-                    label CVV
-                    input.form-control(name="cvv" placeholder="XXX")
-                button(type="submit").btn.btn-primary Submit
+  
+  .row.justify-content-center
+      .col-md-6
+          h1=pet.name
+          h3 $#{pet.priceInCents / 100}
+          p=pet.species
+          img(src=pet.picUrlSq).img-fluid
+          p Born on #{pet.birthday}
+          p=pet.description
+      .col-sm-6
+          legend Purchase Pet #{pet.name}
+          h6 Enter your card information
+          form(action="/charge", method="post", id="payment-form")
+            .col-sm-12
+                label(for="card-element") Credit or debit card
+                #card-element
+                span.input-group-btn
+                      button(type="submit").btn.btn-primary Submit
+                #card-errors(role="alert")
+                    
